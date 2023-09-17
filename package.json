@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "encode": "node ./scripts/encode.js"
   },
   "repository": {
     "type": "git",
