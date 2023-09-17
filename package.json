@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jest",
     "encode": "node ./scripts/encode.js",
-    "decode": "node ./scripts/solution.js"
+    "decode": "node ./scripts/solution.js",
+    "start": "npm run encode && npm run decode && node ./index.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
     "@types/jest": "^29.5.5",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
