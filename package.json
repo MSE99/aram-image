@@ -8,7 +8,7 @@
     "test": "jest",
     "encode": "node ./scripts/encode.js",
     "decode": "node ./scripts/solution.js",
-    "start": "npm run encode && npm run decode && node ./index.js"
+    "start": "npm run encode && npm run decode && node ./server.js"
   },
   "repository": {
     "type": "git",
