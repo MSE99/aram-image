@@ -6,7 +6,7 @@ describe('encode.js', () => {
         jest.resetModules()
     })
     
-    afterAll(() => { removeAllInPrivExcept('icon.png') })
+    afterAll(() => { removeAllInPrivExcept(['icon.png']) })
 
     it('should save the required files to disk.', () => {
         require('./encode.js')

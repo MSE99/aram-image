@@ -7,7 +7,7 @@ describe('encode.js', () => {
     })
     
     afterAll(() => {
-        removeAllInPrivExcept('icon.png')
+        removeAllInPrivExcept(['icon.png'])
     })
     
     it('should save the required files to disk.', () => {
