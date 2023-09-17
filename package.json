@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "encode": "node ./scripts/encode.js"
+    "encode": "node ./scripts/encode.js",
+    "decode": "node ./scripts/solution.js"
   },
   "repository": {
     "type": "git",
