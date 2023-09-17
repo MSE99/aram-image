@@ -1,17 +1,10 @@
-import { basename } from 'node:path'
-import { readFileSync, writeFileSync } from 'node:fs'
 import { encodeInB64 } from '../lib/encoding.js'
 import { replaceEvery } from '../lib/strings.js'
 
-const pathInPriv = rawFilename => `./priv/${basename(rawFilename)}`
-
-const readFromPriv = filename => readFileSync(pathInPriv(filename))
-
-const storeInPriv = (filename, contents, enc = 'utf-8') => writeFileSync(
-    pathInPriv(filename), 
-    contents, 
-    { encoding: enc }
-)
+import {
+    readFromPriv,
+    storeInPriv
+} from '../lib/files.js'
 
 const encode = () => {
     const iconBytes = readFromPriv('icon.png')
