@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --runInBand",
+    "test": "jest -i",
     "encode": "node ./scripts/encode.js",
     "decode": "node ./scripts/solution.js",
     "start": "npm run encode && npm run decode && node ./server.js"
