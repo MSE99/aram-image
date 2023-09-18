@@ -9,13 +9,10 @@ app.get('/count', (_, res) => {
 })
 
 app.get('/image', (_, res) => {
-    try {res
+    res
         .header('Content-Type', 'image/png')
         .status(200)
-        .sendFile(absPathInPriv('decoded_png.png')) } catch (err) {
-            console.log(err)
-            throw err
-        }
+        .sendFile(absPathInPriv('decoded_png.png'))
 })
 
 export default app
